@@ -12,7 +12,7 @@ $ curl -H "Host: whoami.local" whoami.local:8080
 ```
 debug
 ```
-docker-compose up && docker-compose logs letsencrypt
+docker-compose up -d && docker-compose logs letsencrypt
 docker-compose logs -f letsencrypt
 ```
 * forwarding rule router 0.0.0.0:80 -> www-host:8080
