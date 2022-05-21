@@ -1,0 +1,3 @@
+[submodule "www/html"]
+	path = www/html
+	url = https://github.com/afreisinger/html.git
