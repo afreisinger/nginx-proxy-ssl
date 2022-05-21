@@ -3,6 +3,7 @@ version: '3'
 services:
   nginx-proxy:
     image: jwilder/nginx-proxy
+    container_name: nginx-proxy
     restart: always
     ports:
       - "8080:80"
@@ -17,6 +18,7 @@ services:
 
   letsencrypt:
     image: jrcs/letsencrypt-nginx-proxy-companion
+    container_name: letsencrypt-nginx-proxy
     restart: always
     environment:
       - NGINX_PROXY_CONTAINER=nginx-proxy
@@ -28,6 +30,7 @@ services:
 
   www:
     image: nginx
+    container_name: www
     restart: always
     expose:
       - "80"
