@@ -1,3 +1,6 @@
 [submodule "www"]
 	path = www
 	url = https://github.com/afreisinger/www.git
+[submodule "html"]
+	path = www/html
+	url = https://github.com/afreisinger/html.git
